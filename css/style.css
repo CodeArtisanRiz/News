@@ -1,0 +1,50 @@
+:root {
+    --primary: #1d3d5f;
+    --secondary: #16213e;
+    --tertiary: #0f3460;
+    --error: #e94560;
+    --a: #D7DFFE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    text-decoration: none !important;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.search-box {
+    position: relative !important;
+}
+
+.search-btn {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    transform: translateX(0) !important;
+    transform: translateY(0) !important;
+}
+
+.search {
+    border-radius: 25px !important;
+}
+
+.plus-icon {
+    background: rgba(246, 248, 258, 0.1);
+}
+
+.card {
+    background: rgba(246, 248, 258, 0.1);
+    color: white;
+}
+
+.section-shortcuts {
+    padding-top: 20%;
+}
