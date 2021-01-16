@@ -20,18 +20,19 @@ async function getNews(url) {
 
 function renderNews(articles) {
     articles.map((article, index) => {
-        let articleRow =
+        console.log(article.author)
+        let articleRow = 
             '<div class="card mb-2">' +
-            ' <div class="card-body">' +
-            '<a href="' + article.url + '">' +
-            '<img src="' + article.urlToImage + '" alt="" width="300">' +
-            '   <h2 class="title">' + article.title + '</h2>' +
-            '   <h3>By ' + article.author + '</h3>' +
-            '   <p> ' + article.description + '</p>' +
-            '</a' +
-            ' </div>' +
-            '</div>';
-
+                '<div class="card-body">' +
+                    '<a href="' + article.url + '" class="card-img">' +
+                        '<img src="' + article.urlToImage + '" alt="">'
+                    '</a>' +
+                    '<a href="'+ article.url +'" class="card-content">' +
+                        '<h4>' + article.title + '</h4>' +
+                        '<h6>' + article.author + '</h6>' +
+                    '</a>' +
+                '</div>';
+            '</div>'
         main.innerHTML += articleRow;
     });
     return articles;
