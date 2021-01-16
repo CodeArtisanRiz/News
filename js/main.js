@@ -39,4 +39,4 @@ function renderNews(articles) {
 
 
 main.innerHTML = ' ';
-getNews(engadgetUrl).then(articlesArray => renderNews(articlesArray)).then(articles => sendTweets(articles));
+getNews(engadgetUrl).then(articlesArray => renderNews(articlesArray));
