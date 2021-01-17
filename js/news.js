@@ -4,7 +4,7 @@ const main = document.getElementsByTagName('main')[0];
 // News API Data
 
 const apiKey = 'd2faa35a90854fa3b824479d0affb3cf';
-const engadgetUrl = 'https://newsapi.org/v1/articles?source=the-next-web&apiKey=';
+const topNewsUrl = 'https://newsapi.org/v1/articles?source=the-next-web&apiKey=';
 
 // Request News Function
 
@@ -40,4 +40,4 @@ function renderNews(articles) {
 
 
 main.innerHTML = ' ';
-getNews(engadgetUrl).then(articlesArray => renderNews(articlesArray));
+getNews(topNewsUrl).then(articlesArray => renderNews(articlesArray));
