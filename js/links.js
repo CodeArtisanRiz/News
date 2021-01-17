@@ -7,18 +7,17 @@ var websites = [
     "Twitter",
     "LinkedIn",
     "Flipkart",
-    "Pinterest",
-    "Amazon"
+    "Amazon",
+    "Pinterest"
 ];
 var webUrl = [
-    "http://m.facebook.com",
-    "http://www.instagram.com",
-    "http://mobile.twitter.com",
-    "http://in.LinkedIn.com",
-    "http://www.flipkart.com",
-    "http://www.pinterest.com",
-    "http://www.amazon.in"
-
+    "m.facebook.com",
+    "www.instagram.com",
+    "mobile.twitter.com",
+    "in.LinkedIn.com",
+    "www.flipkart.com",
+    "www.amazon.in",
+    "www.pinterest.com"
 ];
 var webFavicon = [
     "http://m.facebook.com/favicon.ico",
@@ -26,8 +25,8 @@ var webFavicon = [
     "http://mobile.twitter.com/favicon.ico",
     "http://in.LinkedIn.com/favicon.ico",
     "http://www.flipkart.com/favicon.ico", //missing
-    "http://www.pinterest.com/favicon.ico",
-    "http://www.amazon.in/favicon.ico"
+    "http://www.amazon.in/favicon.ico",
+    "http://www.pinterest.com/favicon.ico"
 ]
 
 if (typeof(Storage) !== "undefined") {
@@ -40,9 +39,8 @@ if (typeof(Storage) !== "undefined") {
 
     // Retrieve
 
-    for (i = 0; i < webFavicon.length; i++) {
-        // var webLinks = webFavicon.split["/"];
-        let articleRow = '<a href="' + webFavicon[i] + '"> <img src="' + webFavicon[i] + '" + "alt="" width="30""> </a>';
+    for (i = 0; i < webUrl.length; i++) {
+        let articleRow = '<a href="' + webUrl[i] + '"> <img src="https://www.google.com/s2/favicons?domain_url=http://' + webUrl[i] + '" + "alt="" width="30""> </a>';
         document.getElementById("shortcuts").innerHTML = articleRow;
 
     }

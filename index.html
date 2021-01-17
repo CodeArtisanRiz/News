@@ -7,148 +7,66 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Browser</title>
-
-    <style>
-        .card-body {
-            display: flex;
-        }
-        
-        .card-body .card-img {
-            width: 40%;
-        }
-        
-        .card-body a {
-            color: #fff;
-        }
-        
-        .card-body img {
-            width: 100%;
-        }
-        
-        .card-content {
-            padding: 0 .7rem;
-        }
-        
-        .card-content h4 {
-            font-size: .95rem;
-        }
-        
-        .card-content h6 {
-            font-size: .75rem;
-        }
-    </style>
-
 </head>
 
 <body>
 
-    <div class="shortcuts mx-3" id="shortcuts">
-
-    </div>
-    <div class="section-shortcuts mx-3">
-
-        <div class="row p-0 m-0">
-
-            <div class="col-3 my-2">
-
-                <a href="https://m.facebook.com">
-
-                    <img src="icons/facebook.png" alt="" width="30">
-
-                </a>
+    <div class="container-fluid">
+        <div class="">
+            <!-- <div class="row"></div> -->
+            <div class="links-container row">
+                <!--Look in js file-->
 
             </div>
-
-            <div class="col-3 my-2">
-
-                <a href="https://www.instagram.com">
-
-                    <img src="icons/instagram.png" alt="" width="30">
-
+            <div class="col-3 my-2 addBtn">
+                <a href="#Add_Doctors" data-toggle="modal" class="btn">
+                    <img src="icons/plus.svg" alt="" width="30">
                 </a>
-
-            </div>
-
-
-            <div class="col-3 my-2">
-
-                <a href="https://www.twitter.com">
-
-                    <img src="icons/Twitter_Social_Icon_Circle_Color.png" alt="" width="30">
-
-                </a>
-
-            </div>
-
-            <div class="col-3 my-2">
-
-                <a href="https://in.linkedin.com">
-
-                    <img src="icons/linkedin.png" alt="" width="30">
-
-                </a>
-
-            </div>
-
-            <div class="col-3 my-2">
-
-                <a href="https://www.flipkart.com">
-
-                    <img src="icons/flipkart.webp" alt="" width="30">
-
-                </a>
-
-            </div>
-
-            <div class="col-3 my-2">
-
-                <a href="https://www.amazon.in">
-
-                    <img src="icons/amazon.ico" alt="" width="30">
-
-                </a>
-
-            </div>
-
-            <div class="col-3 my-2">
-
-                <a href="https://in.pinterest.com">
-
-                    <img src="icons/pinterest.png" alt="" width="30">
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-body">
-                <a href="" class="card-img">
-                    <img src="https://pocket-image-cache.com/1200x/filters:no_upscale():format(jpg):extract_cover()/https%3A%2F%2Fpocket-syndicated-images.s3.amazonaws.com%2Farticles%2F5966%2F1610487699_GettyImages-960324564.jpg" alt="">
-                </a>
-                <a href="" class="card-content">
-                    <h4>Here’s How Your Metabolism Influences How Many Calories You Burn Each Day</h4>
-                    <h6>The Converstion</h6>
-                </a>
+                <!-- <input type="button" class="searchButton btn btn-primary float-right" onclick="addElement()" value="Add"> -->
             </div>
         </div>
+        <!--  -->
+        <!-- <div class="search">
+
+            <input type="text" class="searchTerm" placeholder="">
+            <button class="searchButton" onclick="addElement()">
+             Go</i>
+          </button>
+        </div> -->
+
 
     </div>
 
 
     <div class="section-news my-5 mx-3">
-
-
-        <main></main>
-
-
-
+        <main>
+            <!-- news here -->
+        </main>
     </div>
 
     </div>
 
-    <script src="js/links.js"></script>
+
+    <div class="modal fade" id="Add_Doctors" aria-hidden="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Shortcut</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="search row">
+                        <input type="text" class="form-control col-6 searchTerm">
+                        <input class=" col-2 searchButton btn btn-primary float-right" onclick="addElement()" value="Go">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/shortcuts.js"></script>
     <script src="js/news.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
