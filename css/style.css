@@ -77,7 +77,15 @@ body {
     font-size: .75rem;
 }
 
-.links-container {
+.links-container .col-2{
+    padding: 0;
+}
+
+.links-container .col-2 a{
+    padding: 0;
+}
+
+/* .links-container {
     padding-top: 5%;
 }
 
@@ -88,4 +96,4 @@ body {
     padding-left: 8%;
     display: flex;
     align-content: center;
-}
+} */
