@@ -1,23 +1,20 @@
 var elements = [];
 window.onload = function() {
-    if (JSON.parse(localStorage.getItem("elements")) == null) {
+    // if (JSON.parse(localStorage.getItem("elements")) == null) {
 
-        var title = "Facebook";
-        var link = "https://facebook.com";
-        var iconLink = "https://www.google.com/s2/favicons?domain_url=http://" +
-            link;
-
-        elements.push([title, link, iconLink]);
+    if (JSON.parse(localStorage.getItem("elements")) != null) {
         elements = JSON.parse(localStorage.getItem("elements"));
         display();
-    } else if (JSON.parse(localStorage.getItem("elements")) != null) {
-        elements = JSON.parse(localStorage.getItem("elements"));
-        display();
+    } else {
+        // var title = "Instagram";
+        // var link = "http://instagram.com";
+        // var iconLink = "https://www.google.com/s2/favicons?domain_url=http://instagram.com";
+        // /*Name,Link,IconLink */
+        // elements.push([title, link, iconLink]);
+
+        // localStorage.setItem("elements", JSON.stringify(elements));
+        // display();
     }
-    // else if (JSON.parse(localStorage.getItem("elements")) == null) {
-
-    //     display();
-    // }
 
 };
 
@@ -46,10 +43,9 @@ function display() {
         document.querySelector(".links-container").innerHTML +=
         "<div class='col-2 my-2 mr-3 stored-links'>" +
         "<a class='tile' href='https://" + elements[i][1] + "'>" +
-        "<img width='20' height='20' src='" + elements[i][2] + "'>" +
+        "<img width='30' height='30' src='" + elements[i][2] + "'>" +
         "</a>" +
-        "<img hidden width='25' height='25' id='dustbin' class='dustbin' " +
-        " src = 'https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/user-trash-full-icon.png'" +
+        "<img hidden width='25' height='25' id='dustbin' class='dustbin' src = 'https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/user-trash-full-icon.png'" +
         " onclick='del(" + i + ")'>" +
         "</div>"
 

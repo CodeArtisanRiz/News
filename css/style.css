@@ -82,6 +82,18 @@ body {
     padding: auto;
 }
 
+.default-links {
+    /* box-sizing: border-box;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    display: flex;
+    align-content: center;
+     */
+    margin: auto;
+    padding: auto;
+}
+
 .stored-links {
     box-sizing: border-box;
     padding-top: 2%;
