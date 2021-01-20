@@ -77,13 +77,14 @@ body {
     font-size: .75rem;
 }
 
-.links-container .col-2{
+.links-container .col-2 {
     padding: 0;
 }
 
-.links-container .col-2 a{
+.links-container .col-2 a {
     padding: 0;
 }
+
 
 /* .links-container {
     padding-top: 5%;
@@ -97,3 +98,8 @@ body {
     display: flex;
     align-content: center;
 } */
+
+.modal-body {
+    align-items: center;
+    transform: translateX("-50%");
+}
