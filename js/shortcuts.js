@@ -31,16 +31,16 @@ function addElement() {
 }
 
 function display() {
-    document.querySelector(".links-container").innerHTML = '<div class="col-2 my-2 order-2 addBtn"><a href="#Add_Doctors" data-toggle="modal" class="btn"><img src="icons/plus.svg" alt="" width="20"></a><!-- <input type="button" class="searchButton btn btn-primary float-right" onclick="addElement()" value="Add"> --></div>';
+    document.querySelector(".links-container").innerHTML = '<div class="col-2 my-2 order-2 addBtn"><a href="#Add_short" data-toggle="modal" class="btn"><img src="icons/plus.svg" alt="" width="20"></a><!-- <input type="button" class="searchButton btn btn-primary float-right" onclick="addElement()" value="Add"> --></div>';
     for (var i = 0; i < elements.length; i++)
         document.querySelector(".links-container").innerHTML +=
         "<div class='col-2 my-2 mr-3 stored-links'>" +
-            "<a class='tile' href='https://" + elements[i][1] + "'>" +
-                "<img width='20' height='20' src='" + elements[i][2] + "'>" + 
-            "</a>" +
-            "<img hidden width='25' height='25' id='dustbin' class='dustbin' " +
-            " src = 'https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/user-trash-full-icon.png'" +
-            " onclick='del(" + i + ")'>" +
+        "<a class='tile' href='https://" + elements[i][1] + "'>" +
+        "<img width='20' height='20' src='" + elements[i][2] + "'>" +
+        "</a>" +
+        "<img hidden width='25' height='25' id='dustbin' class='dustbin' " +
+        " src = 'https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/user-trash-full-icon.png'" +
+        " onclick='del(" + i + ")'>" +
         "</div>"
 
 }
