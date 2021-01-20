@@ -1,6 +1,16 @@
 var elements = [];
 window.onload = function() {
-    if (JSON.parse(localStorage.getItem("elements")) != null) {
+    if (JSON.parse(localStorage.getItem("elements")) == null) {
+
+        var title = "Facebook";
+        var link = "https://facebook.com";
+        var iconLink = "https://www.google.com/s2/favicons?domain_url=http://" +
+            link;
+
+        elements.push([title, link, iconLink]);
+        elements = JSON.parse(localStorage.getItem("elements"));
+        display();
+    } else if (JSON.parse(localStorage.getItem("elements")) != null) {
         elements = JSON.parse(localStorage.getItem("elements"));
         display();
     }
